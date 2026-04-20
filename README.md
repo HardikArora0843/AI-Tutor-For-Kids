@@ -615,14 +615,4 @@ It is ideal for:
 
 ---
 
-## Final Note
 
-<div align="center">
-
-### Built to make learning feel like play.
-
-If you want, this README can be taken even further with:
-
-`preview screenshots` • `custom banners` • `GIF demos` • `project logo` • `live demo section`
-
-</div>
