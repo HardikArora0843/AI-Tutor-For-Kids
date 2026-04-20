@@ -1,112 +1,282 @@
-# AI Kids Tutor
+# <div align="center">AI Kids Tutor</div>
 
-An interactive browser-based learning app for children, built with vanilla JavaScript and packaged with Vite for local development and production deployment.
+<div align="center">
 
-This project combines bright, playful UI design with simple educational activities across multiple learning areas such as alphabet recognition, counting, shapes, colors, language practice, quizzes, story generation, and drawing.
+### Learn. Play. Speak. Draw. Grow.
 
-## Highlights
+An interactive, colorful, browser-based learning playground for children built with **Vanilla JavaScript + Vite** and designed for a smooth **Vercel deployment**.
 
-- 8 interactive learning modules
-- Kid-friendly visual design with animated cards, gradients, and playful feedback
-- Speech synthesis for pronunciation and read-aloud features
-- Sound effects using the Web Audio API
-- Local progress tracking with stars and simple completion feedback
-- Canvas-based coloring and drawing activities
-- Static-site friendly architecture suitable for Vercel deployment
+<p>
+  <img src="https://img.shields.io/badge/Frontend-Vanilla%20JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=111111" alt="Vanilla JavaScript">
+  <img src="https://img.shields.io/badge/Bundler-Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white" alt="Vite">
+  <img src="https://img.shields.io/badge/Deploy-Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Vercel">
+  <img src="https://img.shields.io/badge/UI-Playful%20Learning-FF6B6B?style=for-the-badge" alt="Playful UI">
+  <img src="https://img.shields.io/badge/Storage-localStorage-14B8A6?style=for-the-badge" alt="localStorage">
+</p>
 
-## Live App Model
+<p>
+  <img src="https://img.shields.io/badge/Modules-8-blueviolet?style=flat-square" alt="8 modules">
+  <img src="https://img.shields.io/badge/Mode-Static%20App-success?style=flat-square" alt="Static app">
+  <img src="https://img.shields.io/badge/Child%20Friendly-Yes-ff69b4?style=flat-square" alt="Child friendly">
+  <img src="https://img.shields.io/badge/Voice-Speech%20Synthesis-orange?style=flat-square" alt="Speech synthesis">
+  <img src="https://img.shields.io/badge/Canvas-Drawing%20%26%20Painting-0ea5e9?style=flat-square" alt="Canvas">
+</p>
 
-This is a fully client-side application:
+</div>
 
-- No backend server
-- No database
+---
+
+<div align="center">
+
+## A Bright Little World of Learning
+
+</div>
+
+**AI Kids Tutor** is a kid-friendly educational web app that turns foundational learning into an engaging digital playground.  
+Instead of presenting lessons as static content, it wraps learning inside movement, color, speech, rewards, mini-games, and creative interaction.
+
+Children can:
+
+- explore the **alphabet**
+- practice **numbers and counting**
+- learn **shapes and colors**
+- discover words in **multiple languages**
+- answer **quizzes**
+- build tiny **stories**
+- paint and draw on interactive **canvases**
+
+Everything runs entirely in the browser, making the project lightweight, portable, and ideal for **student demos, prototypes, coursework, and static hosting on Vercel**.
+
+---
+
+## Table of Contents
+
+- [Why It Stands Out](#why-it-stands-out)
+- [Experience Snapshot](#experience-snapshot)
+- [Feature Universe](#feature-universe)
+- [Module Showcase](#module-showcase)
+- [Tech Stack](#tech-stack)
+- [Architecture](#architecture)
+- [Project Structure](#project-structure)
+- [How the App Works](#how-the-app-works)
+- [Local Development](#local-development)
+- [Production Build](#production-build)
+- [Vercel Deployment](#vercel-deployment)
+- [Browser APIs Used](#browser-apis-used)
+- [Limitations](#limitations)
+- [Future Upgrades](#future-upgrades)
+- [Quick Start](#quick-start)
+
+---
+
+## Why It Stands Out
+
+<table>
+  <tr>
+    <td width="33%" valign="top">
+      <h3>Playful by Design</h3>
+      <p>Bright gradients, large cards, emoji-rich lessons, and cheerful feedback make the interface feel welcoming for children.</p>
+    </td>
+    <td width="33%" valign="top">
+      <h3>Interactive Learning</h3>
+      <p>The app does not stop at display. It speaks, reacts, rewards, checks answers, and encourages repeated exploration.</p>
+    </td>
+    <td width="33%" valign="top">
+      <h3>Easy to Deploy</h3>
+      <p>No backend, no database, no authentication setup, no environment secrets. It is a static app built for simple hosting.</p>
+    </td>
+  </tr>
+</table>
+
+---
+
+## Experience Snapshot
+
+<div align="center">
+
+```text
+ Alphabet   Numbers   Shapes   Colors
+ Language   Quiz      Stories  Drawing
+
+ + Voice feedback
+ + Star rewards
+ + Progress tracking
+ + Confetti celebrations
+ + Creative exploration
+```
+
+</div>
+
+### Core Experience Pillars
+
+- **Learn visually** through cards, symbols, and real-world object examples
+- **Hear concepts aloud** with browser speech synthesis
+- **Get rewarded** through star collection and celebration effects
+- **Create freely** using drawing and coloring tools
+- **Stay lightweight** with a pure frontend architecture
+
+---
+
+## Feature Universe
+
+<details open>
+<summary><strong>Interactive learning systems included</strong></summary>
+
+- 8 educational modules in one app
+- Global progress system with star accumulation
+- Sound effects via Web Audio API
+- Pronunciation and read-aloud support via Speech Synthesis
+- Canvas-based drawing and coloring
+- Quiz and game-based reinforcement
+- Local session persistence with `localStorage`
+- Responsive single-page style interaction flow
+
+</details>
+
+<details>
+<summary><strong>Why the app is deployment-friendly</strong></summary>
+
+- No server runtime
 - No API routes
-- No authentication layer
-- No environment variables required
+- No database connection
+- No auth provider setup
+- No environment variables required for basic use
+- Vite-based build process
+- Static hosting compatible
 
-Everything runs in the browser, and user progress is stored locally using `localStorage`.
+</details>
 
-## Features
+---
 
-### 1. Alphabet Module
+## Module Showcase
 
-- Letter flashcards from `A` to `Z`
-- Word association for each letter
-- Emoji-based visual reinforcement
-- Pronunciation support
-- Matching game mode
+### Alphabet
 
-### 2. Numbers Module
+> Flashcards + pronunciation + matching game  
+Children move from letter recognition to word association in a visual, tap-friendly flow.
 
-- Counting from `0` to `10`
-- Tap-to-count interactions
-- Visual counting objects
-- Number game for selecting the correct quantity
+### Numbers
 
-### 3. Shapes Module
+> Counting + object interaction + quantity game  
+Numbers are introduced through visuals and reinforced with simple counting mechanics.
 
-- Shape learning cards
-- Shape tracing mode using SVG paths
-- Shape hunt activity
-- Real-world examples for each shape
+### Shapes
 
-### 4. Colors Module
+> Learn + trace + hunt  
+The shapes module combines explanation, tracing, and recognition tasks to help children connect shapes to everyday life.
 
-- Color recognition lessons
-- Coloring activity with a paint canvas
-- Brush size adjustment
-- Color quiz mode
+### Colors
 
-### 5. Language Module
+> Learn + paint + quiz  
+Color learning transitions naturally into painting and then into recognition checks.
 
-- Flashcards for multiple languages
-- Word matching interactions
-- Listening-based recognition activity
-- Speech synthesis with language codes
+### Language
 
-Currently included:
+> Flashcards + matching + listening  
+Introduces multilingual vocabulary using voice-supported, visual word associations.
+
+Supported right now:
 
 - Spanish
 - French
 - German
 - Italian
 
-### 6. Quiz Module
+### Quiz
 
-- Category-based quiz selection
-- Multiple-choice questions
-- Score tracking and feedback
-- End-of-quiz results screen
+> Category-based challenge mode  
+Lets children test understanding through multiple-choice questions and simple score feedback.
 
-### 7. Stories Module
+### Stories
 
-- Theme-based story generation
-- Character selection
-- Client-side story templates
-- Read-aloud mode using browser speech synthesis
+> Theme selection + character selection + generated story  
+Encourages imagination while still feeling structured and child-safe through template-based story creation.
 
-### 8. Drawing Module
+### Drawing
 
-- Freehand drawing canvas
-- Brush and eraser tools
-- Preset shapes
-- Drawing prompts and challenges
-- Save/share interactions
+> Free creativity zone  
+Offers drawing, brush tools, erasing, shapes, challenges, saving, and sharing.
+
+---
 
 ## Tech Stack
 
-- HTML5
-- CSS
-- Vanilla JavaScript
-- Vite
-- Tailwind CSS via CDN in the current UI
-- Browser APIs:
-  - `localStorage`
-  - `SpeechSynthesis`
-  - `AudioContext`
-  - `Canvas`
-  - `navigator.share`
-  - `navigator.clipboard`
+<table>
+  <tr>
+    <td><strong>Language</strong></td>
+    <td>JavaScript (ES Modules)</td>
+  </tr>
+  <tr>
+    <td><strong>Bundler</strong></td>
+    <td>Vite</td>
+  </tr>
+  <tr>
+    <td><strong>Markup</strong></td>
+    <td>HTML5</td>
+  </tr>
+  <tr>
+    <td><strong>Styling</strong></td>
+    <td>Tailwind via CDN + inline CSS</td>
+  </tr>
+  <tr>
+    <td><strong>Persistence</strong></td>
+    <td>localStorage</td>
+  </tr>
+  <tr>
+    <td><strong>Audio / Voice</strong></td>
+    <td>Web Audio API + Speech Synthesis</td>
+  </tr>
+  <tr>
+    <td><strong>Deployment</strong></td>
+    <td>Vercel</td>
+  </tr>
+</table>
+
+---
+
+## Architecture
+
+### App Model
+
+This project is a **fully client-side static application**.
+
+That means:
+
+- no backend server
+- no API dependency for the main learning flow
+- no database
+- no session management
+- no user login system
+
+### Runtime Flow
+
+```mermaid
+flowchart TD
+    A["index.html"] --> B["main.js"]
+    B --> C["KidsTutor Controller"]
+    C --> D["Progress + Sound + Speech"]
+    C --> E["Module Router"]
+    E --> F["Alphabet"]
+    E --> G["Numbers"]
+    E --> H["Shapes"]
+    E --> I["Colors"]
+    E --> J["Language"]
+    E --> K["Quiz"]
+    E --> L["Stories"]
+    E --> M["Drawing"]
+```
+
+### Design Principle
+
+The architecture favors:
+
+- simplicity
+- readability
+- direct DOM control
+- fast iteration
+- easy hosting
+
+---
 
 ## Project Structure
 
@@ -118,6 +288,7 @@ AI_KIDS_TUTOR/
 |-- package-lock.json
 |-- vercel.json
 |-- .vercelignore
+|-- README.md
 |-- modules/
 |   |-- alphabet.js
 |   |-- numbers.js
@@ -135,277 +306,271 @@ AI_KIDS_TUTOR/
 |-- ai-tutor.zip
 ```
 
-## Core Files Explained
+### Important Files
 
-### `index.html`
+- [`index.html`](D:/HARDIK/SEM%207/CAPSTONE/AI_KIDS_TUTOR/AI_KIDS_TUTOR/index.html)  
+  Main visual shell and app container.
 
-The main application shell. It defines:
+- [`main.js`](D:/HARDIK/SEM%207/CAPSTONE/AI_KIDS_TUTOR/AI_KIDS_TUTOR/main.js)  
+  Core controller for progress, sound, speech, module loading, and shared utilities.
 
-- The app layout
-- Module selection cards
-- Progress bar
-- Sound toggle
-- Base page styles and inline Tailwind configuration
+- [`modules/alphabet.js`](D:/HARDIK/SEM%207/CAPSTONE/AI_KIDS_TUTOR/AI_KIDS_TUTOR/modules/alphabet.js)  
+  Alphabet lesson and matching game.
 
-### `main.js`
+- [`modules/numbers.js`](D:/HARDIK/SEM%207/CAPSTONE/AI_KIDS_TUTOR/AI_KIDS_TUTOR/modules/numbers.js)  
+  Counting content and number game.
 
-The central controller for the app. It handles:
+- [`modules/shapes.js`](D:/HARDIK/SEM%207/CAPSTONE/AI_KIDS_TUTOR/AI_KIDS_TUTOR/modules/shapes.js)  
+  Shape learning, tracing, and hunt mode.
 
-- Global app setup
-- Progress tracking
-- Star rewards
-- Sound toggling
-- Speech playback
-- Confetti animation
-- Module switching
-- Shared drag helper behavior
+- [`modules/colors.js`](D:/HARDIK/SEM%207/CAPSTONE/AI_KIDS_TUTOR/AI_KIDS_TUTOR/modules/colors.js)  
+  Color lessons, paint mode, and quiz mode.
 
-### `modules/*.js`
+- [`modules/language.js`](D:/HARDIK/SEM%207/CAPSTONE/AI_KIDS_TUTOR/AI_KIDS_TUTOR/modules/language.js)  
+  Multilingual word learning.
 
-Each file in `modules/` owns one learning area. These modules are imported into `main.js` and invoked when a user opens a section of the app.
+- [`modules/quiz.js`](D:/HARDIK/SEM%207/CAPSTONE/AI_KIDS_TUTOR/AI_KIDS_TUTOR/modules/quiz.js)  
+  General quiz engine and category flow.
 
-## Module Responsibilities
+- [`modules/stories.js`](D:/HARDIK/SEM%207/CAPSTONE/AI_KIDS_TUTOR/AI_KIDS_TUTOR/modules/stories.js)  
+  Theme-driven story creation.
 
-### `modules/alphabet.js`
+- [`modules/drawing.js`](D:/HARDIK/SEM%207/CAPSTONE/AI_KIDS_TUTOR/AI_KIDS_TUTOR/modules/drawing.js)  
+  Drawing canvas, tools, and challenges.
 
-- Alphabet flashcards
-- Letter pronunciation
-- Matching game logic
+---
 
-### `modules/numbers.js`
+## How the App Works
 
-- Number display
-- Counting interactions
-- Quantity game
+### Initialization Sequence
 
-### `modules/shapes.js`
+1. `index.html` loads the page shell and app layout.
+2. `main.js` imports all learning modules.
+3. A `KidsTutor` controller instance initializes the experience.
+4. Stored progress and sound settings are loaded from `localStorage`.
+5. Clicking a module card calls the relevant module loader.
+6. Interactions award stars, play feedback sounds, and can trigger speech output.
 
-- Shape content
-- Shape tracing with SVG
-- Shape matching / hunt activity
+### Shared Systems
 
-### `modules/colors.js`
+- **Progress system**  
+  Tracks stars earned across modules.
 
-- Color learning cards
-- Painting canvas
-- Color quiz interactions
+- **Audio system**  
+  Generates simple sound effects using oscillator nodes.
 
-### `modules/language.js`
+- **Speech system**  
+  Speaks letters, words, prompts, and stories.
 
-- Language word sets
-- Translation flashcards
-- Listening game
-- Matching game
+- **Reward system**  
+  Uses stars and confetti to reinforce interaction.
 
-### `modules/quiz.js`
-
-- Quiz categories
-- Multiple-choice flow
-- Results feedback
-
-### `modules/stories.js`
-
-- Story theme selection
-- Character selection
-- Story template rendering
-- Read-aloud mode
-
-### `modules/drawing.js`
-
-- Free drawing canvas
-- Tool controls
-- Drawing challenges
-- Save and share behavior
-
-## How It Works
-
-When the app starts:
-
-1. `index.html` loads the app shell.
-2. `main.js` imports all module loaders.
-3. A `KidsTutor` instance initializes progress and sound settings.
-4. When a user selects a module, `showModule()` loads that module into the shared content area.
-5. Interactions award stars and persist progress in `localStorage`.
+---
 
 ## Local Development
 
-### Prerequisites
+### Requirements
 
-- Node.js 18 or newer
+- Node.js `18+`
 - npm
 
-### Install
+### Install Dependencies
 
 ```bash
 npm install
 ```
 
-### Run Locally
+### Start Development Server
 
 ```bash
 npm run dev
 ```
 
-Vite will start a local development server and provide a URL such as:
+Vite will provide a local URL such as:
 
 ```text
 http://localhost:5173
 ```
 
-Open that URL in your browser.
+### Very Important
 
-### Important
+Do **not** run the app by double-clicking `index.html` and opening it through `file://`.
 
-Do not test the app by double-clicking `index.html` and opening it with `file://`.
+That can cause:
 
-Why:
+- module loading errors
+- CORS-related browser restrictions
+- broken script resolution
+- missing global functions
 
-- ES modules behave differently under `file://`
-- browsers enforce stricter local file security rules
-- some features may fail due to local origin restrictions
+Use a local HTTP server instead, preferably Vite.
 
-Always run the app through Vite or another local HTTP server.
+---
 
 ## Production Build
 
-To create a production build:
+### Build
 
 ```bash
 npm run build
 ```
 
-Vite will output the production-ready static files into:
-
-```text
-dist/
-```
-
-To preview the built app locally:
+### Preview the Production Output
 
 ```bash
 npm run preview
 ```
 
+The built static files are generated in:
+
+```text
+dist/
+```
+
+---
+
 ## Vercel Deployment
 
-This project is suitable for Vercel because it is a static frontend app.
+<div align="center">
 
-### Option 1: Deploy with GitHub, GitLab, or Bitbucket
+### Smooth Static Deployment Path
 
-1. Push this project to your Git repository.
-2. Go to Vercel.
-3. Click `Add New Project`.
-4. Import your repository.
-5. Vercel should detect the framework as `Vite`.
+</div>
+
+This project is suitable for **Vercel** because it is a **frontend-only static app**.
+
+### Deploy with Git Integration
+
+1. Push the project to GitHub, GitLab, or Bitbucket.
+2. Open Vercel.
+3. Click **Add New Project**.
+4. Import the repository.
+5. Let Vercel detect the framework.
 6. Deploy.
 
-### Option 2: Deploy with Vercel CLI
+### Expected Build Settings
+
+```text
+Framework Preset: Vite
+Build Command:    npm run build
+Output Directory: dist
+```
+
+### Deploy with CLI
 
 ```bash
 vercel
 ```
 
-For a production deployment:
+For production:
 
 ```bash
 vercel --prod
 ```
 
-### Vercel Config
+### Included Deployment Files
 
-This repository includes:
+- [`vercel.json`](D:/HARDIK/SEM%207/CAPSTONE/AI_KIDS_TUTOR/AI_KIDS_TUTOR/vercel.json)
+- [`.vercelignore`](D:/HARDIK/SEM%207/CAPSTONE/AI_KIDS_TUTOR/AI_KIDS_TUTOR/.vercelignore)
 
-- `vercel.json` with framework set to `vite`
-- `.vercelignore` to avoid uploading unnecessary files like `ai-tutor.zip`
-
-### Expected Vercel Build Settings
-
-- Framework Preset: `Vite`
-- Build Command: `npm run build`
-- Output Directory: `dist`
+---
 
 ## Browser APIs Used
 
-The app depends on several browser capabilities.
-
-### `localStorage`
-
-Used for:
-
-- progress storage
-- sound preference
-- simple persistence between sessions
-
-### `SpeechSynthesis`
+<details open>
+<summary><strong>SpeechSynthesis</strong></summary>
 
 Used for:
 
-- alphabet pronunciation
-- number and shape voice support
-- language practice
-- story read-aloud
+- pronunciation support
+- multilingual word playback
+- story read-aloud experiences
 
-### `AudioContext`
+</details>
 
-Used for:
-
-- click sound
-- reward sound
-- error sound
-- success feedback
-
-### `Canvas`
+<details open>
+<summary><strong>Web Audio API</strong></summary>
 
 Used for:
 
-- coloring activity
-- free drawing module
+- click sounds
+- success sounds
+- reward sounds
+- error feedback
 
-### `navigator.share` and `navigator.clipboard`
+</details>
 
-Used in the drawing module for share behavior with a clipboard fallback.
+<details open>
+<summary><strong>localStorage</strong></summary>
 
-## Educational Design Notes
+Used for:
 
-This project is designed to be:
+- saving stars
+- storing progress
+- remembering sound preference
 
-- highly visual
-- low-friction for young learners
-- feedback-rich
-- self-guided
+</details>
 
-The learning pattern is intentionally simple:
+<details open>
+<summary><strong>Canvas API</strong></summary>
 
-- introduce a concept
-- reinforce it visually
-- add interaction
-- reward participation
+Used for:
 
-## Current Limitations
+- drawing interactions
+- coloring mode
+- saving artwork
 
-These are not blockers for learning or deployment, but they are useful to know:
+</details>
 
-- Tailwind is currently loaded from the CDN, which is fine for prototyping but not the best long-term production setup.
-- All data is hardcoded in the frontend.
-- Progress is stored only in the current browser and device.
-- Story generation is template-based, not AI-backed.
-- There is no parent/admin dashboard.
-- There are no automated tests yet.
+<details open>
+<summary><strong>navigator.share / navigator.clipboard</strong></summary>
 
-## Recommended Future Improvements
+Used in the drawing module for share interactions and fallback copy behavior.
 
-- Move Tailwind from CDN to a proper Vite/PostCSS setup
-- Add responsive polish for smaller mobile screens
-- Add accessibility improvements such as keyboard support and ARIA labels
-- Add real drag-and-drop APIs where appropriate
-- Add unit and integration tests
-- Add analytics or learning progress summaries
-- Add more languages, quiz sets, and story templates
-- Add optional backend persistence for shared accounts or teacher dashboards
+</details>
 
-## Unused or Starter Files
+---
 
-Some files in the repository appear to be leftover from the original Vite starter or from manual packaging:
+## Limitations
+
+This project is functional and deployable, but a few things are still prototype-oriented:
+
+- Tailwind is currently loaded from the CDN instead of a local build pipeline
+- data is hardcoded in the frontend
+- there are no automated tests yet
+- progress only exists in the local browser
+- no multi-user support exists
+- no teacher, admin, or analytics dashboard exists
+
+---
+
+## Future Upgrades
+
+### High-Impact Improvements
+
+- convert Tailwind CDN usage into a proper Vite/PostCSS setup
+- add automated tests
+- improve accessibility and keyboard navigation
+- add more learning modules and quizzes
+- introduce backend persistence for shared progress
+- add dashboards for parents or teachers
+- support richer content authoring
+- improve mobile polish for smaller screens
+
+### Dream Version
+
+- AI-assisted story generation
+- personalized learning paths
+- spoken answer recognition
+- achievement system
+- printable worksheets
+- teacher classroom mode
+
+---
+
+## Unused or Legacy Files
+
+These appear to be starter leftovers or packaging artifacts and are not central to the main runtime:
 
 - `counter.js`
 - `style.css`
@@ -413,53 +578,7 @@ Some files in the repository appear to be leftover from the original Vite starte
 - `public/vite.svg`
 - `ai-tutor.zip`
 
-They are not central to the current app flow.
-
-## Scripts
-
-Defined in `package.json`:
-
-```json
-{
-  "dev": "vite",
-  "build": "vite build",
-  "preview": "vite preview"
-}
-```
-
-## Who This Project Is For
-
-This project is a good fit for:
-
-- student capstone demos
-- front-end portfolio projects
-- children’s learning prototypes
-- classroom demo apps
-- static deployments on Vercel
-
-## Authoring Notes
-
-The application currently favors:
-
-- fast iteration
-- playful interaction
-- readable module-level code
-
-It does not yet aim for:
-
-- framework-heavy architecture
-- enterprise-grade state management
-- backend-driven personalization
-
-## License
-
-No license file is currently included in the repository.
-
-If you want to open-source the project, consider adding one of:
-
-- MIT
-- Apache-2.0
-- GPL-3.0
+---
 
 ## Quick Start
 
@@ -468,15 +587,42 @@ npm install
 npm run dev
 ```
 
-## Deployment Summary
+Then open:
 
-If you want the shortest version:
-
-1. Install dependencies
-2. Run locally with `npm run dev`
-3. Build with `npm run build`
-4. Deploy the repo to Vercel
+```text
+http://localhost:5173
+```
 
 ---
 
-Built as a colorful, interactive learning experience for children with a static deployment path that is simple enough for demos, coursework, and early-stage product prototypes.
+## Project Personality
+
+This app aims to feel:
+
+- joyful
+- visual
+- lightweight
+- encouraging
+- beginner-friendly
+
+It is ideal for:
+
+- academic capstone showcases
+- frontend demos
+- learning product prototypes
+- kid-focused educational experiments
+- simple public deployment on Vercel
+
+---
+
+## Final Note
+
+<div align="center">
+
+### Built to make learning feel like play.
+
+If you want, this README can be taken even further with:
+
+`preview screenshots` • `custom banners` • `GIF demos` • `project logo` • `live demo section`
+
+</div>
